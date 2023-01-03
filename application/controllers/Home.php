@@ -12,7 +12,7 @@ class Home extends CI_Controller {
     }
 
     public function index() {
-        $params['title'] = 'Selamat Datang di Toko Sayur 22';
+        $params['title'] = 'Selamat Datang di Tegar Mart';
 
         $products['products'] = $this->product->get_all_products();
         $products['best_deal'] = $this->product->best_deal_product();

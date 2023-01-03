@@ -69,6 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="<?php echo base_url(); ?>" class="nav-link">Home</a></li>
+			  <li class="nav-item active"><a href="<?php echo base_url('index.php/shop/produk'); ?>" class="nav-link">Bahan Pokok</a></li>
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -91,7 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				  <div class="divider"></div>
 				  <a class="dropdown-item" href="<?php echo site_url('auth/logout'); ?>">Logout</a>
 				  <?php else : ?>
-              	  <a class="dropdown-item" href="<?php echo site_url('auth/login'); ?>">Masuk Log</a>
+              	  <a class="dropdown-item" href="<?php echo site_url('auth/login'); ?>">Masuk Login</a>
 				  <a class="dropdown-item" href="<?php echo site_url('auth/register'); ?>">Daftar</a>
 				  <?php endif; ?>
               </div>

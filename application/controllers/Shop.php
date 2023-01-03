@@ -8,7 +8,8 @@ class Shop extends CI_Controller {
         $this->load->library('cart');
         $this->load->model(array(
             'product_model' => 'product',
-            'customer_model' => 'customer'
+            'customer_model' => 'customer',
+            'review_model' => 'review'
         ));
     }
 
@@ -36,6 +37,16 @@ class Shop extends CI_Controller {
                 show_404();
             }
         }
+    }
+
+    public function produk() {
+        $produk['products'] = $this->product->get_all_products();
+        $produk['best_deal'] = $this->product->best_deal_product();
+        $produk['reviews'] = $this->review->get_all_reviews();
+
+        get_header('Bahan Pokok');
+        get_template_part('shop/produk', $produk);
+        get_footer();
     }
 
     public function cart()

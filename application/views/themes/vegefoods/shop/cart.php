@@ -100,7 +100,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <?php else : ?>
             <div class="row">
               <div class="col-md-12 ftco-animate">
-                <div class="alert alert-info">Tidak ada barang dalam keranjang.<br><?php echo anchor('browse', 'Jelajahi produk kami'); ?> dan mulailah berbelanja!</div>
+                <div class="alert alert-info">Tidak ada barang dalam keranjang.<br><?php echo anchor('shop/produk', 'Jelajahi produk kami'); ?> dan mulailah berbelanja!</div>
               </div>
             </div>
           <?php endif; ?>

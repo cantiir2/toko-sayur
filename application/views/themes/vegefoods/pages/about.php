@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
             <div class="heading-section-bold mb-4 mt-md-5">
                 <div class="ml-md-0">
-                  <h2 class="mb-4">Selamat Datang di Toko Online <?php echo get_store_name(); ?></h2>
+                  <h2 class="mb-4">Selamat Datang di Tegar Mart <?php echo get_store_name(); ?></h2>
               </div>
             </div>
             <div class="pb-md-5">
